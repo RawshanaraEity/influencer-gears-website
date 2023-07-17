@@ -1,0 +1,85 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+
+/* shared styles */
+body {
+  font-family: "Poppins", sans-serif;
+}
+
+/* header styles */
+header {
+  padding: 0px 100px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav h2 {
+  color: #3a3a3a;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+nav > ul {
+  display: flex;
+}
+nav li {
+  list-style: none;
+  margin-left: 25px;
+  font-size: 1rem;
+  font-weight: 600;
+}
+nav li a {
+  color: #3a3a3a;
+  text-decoration: none;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+.banner-content {
+   margin-top: 80px;
+}
+.banner-title {
+  color: #3a3a3a;
+  font-size: 3.25rem;
+  font-weight: 700;
+  margin: 0;
+}
+.banner-description {
+  color: #3a3a3a;
+  font-size: 1rem;
+  font-weight: 600;
+}
+.btn-primary {
+  padding: 10px 24px;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 700;
+  border-radius: 41px;
+  background: #e02c6d;
+  border: none;
+}
+
+.banner-img{
+    background-image: url('images/Circle\ design.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+/* main styles */
+.e-commerce-site{
+    padding: 100px 150px;
+}
+.e-commerce-site-img{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    border-top: 2px solid #ddeaf899;
+    border-bottom: 2px solid #ddeaf899;
+}
