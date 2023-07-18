@@ -37,10 +37,8 @@ nav li a {
 .banner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin-top: 50px;
-}
-.banner-content {
-   margin-top: 80px;
 }
 .banner-title {
   color: #3a3a3a;
@@ -114,11 +112,15 @@ nav li a {
     .banner-title {
         font-size: 1.75rem;
       }
+      .banner-img{
+        background-image: none;
+    }
     .banner-img img{
         width: 100%;
     }
     .e-commerce-site {
         padding: 20px 18px;
+        margin-top: 80px
     }
     .e-commerce-site-img{
        display: inline;
@@ -126,4 +128,20 @@ nav li a {
     }
     
 
+}
+
+/* responsive for medium devices */
+@media screen and (min-width:576px) and (max-width:970px){
+    header {
+        padding: 0px 50px;
+    }
+    .banner-title {
+        font-size: 3rem;
+      }
+    .banner-img{
+        background-image: none;
+    }
+    .e-commerce-site {
+        padding: 50px;
+    }
 }
