@@ -61,87 +61,133 @@ nav li a {
   border: none;
 }
 
-.banner-img{
-    background-image: url('images/Circle\ design.svg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+.banner-img {
+  background-image: url("images/Circle\ design.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
-
 
 /* main styles */
-.e-commerce-site{
-    margin-top: 100px;
-    padding: 50px 150px;
-    border-top: 2px solid #ddeaf899;
-    border-bottom: 2px solid #ddeaf899;
+.e-commerce-site {
+  margin-top: 100px;
+  padding: 50px 150px;
+  border-top: 2px solid #ddeaf899;
+  border-bottom: 2px solid #ddeaf899;
 }
-.e-commerce-site-img{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.e-commerce-site-img {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
+/* cards style */
+.cards {
+  padding: 100px 150px;
+}
 
-
-
-
-
-
+.cards > h2 {
+  color: #3a3a3a;
+  font-size: 1.75rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 50px;
+}
+.cards-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+.card-item {
+  border-radius: 5px;
+  background: #fff;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 15px;
+}
+.card-item img {
+  width: 100%;
+}
+.card-item-title {
+  color: #18191f;
+  font-size: 1.75rem;
+  font-weight: 500;
+  margin: 0;
+}
+.card-starts {
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 0;
+}
+.see-more {
+  color: rgba(224, 44, 109, 0.87);
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: right;
+}
 /* responsive for mobile */
-@media screen and (max-width:576px){
-    .hide{
-        display: none;
-    }
-    header {
-        padding: 0px 0px;
-      }
-    nav{
-        flex-direction: column;
-        text-align: center;
-    }
-    nav li {
-        padding: 0 6px;
-      }
-    .banner{
-        flex-direction: column-reverse;
-    }
-    .banner-content{
-        text-align: center;
-    }
-    .banner-title {
-        font-size: 1.75rem;
-      }
-      .banner-img{
-        background-image: none;
-    }
-    .banner-img img{
-        width: 100%;
-    }
-    .e-commerce-site {
-        padding: 20px 18px;
-        margin-top: 80px
-    }
-    .e-commerce-site-img{
-       display: inline;
-       padding: 0;
-    }
-    
-
+@media screen and (max-width: 576px) {
+  .hide {
+    display: none;
+  }
+  header,
+  .cards {
+    padding: 0px 0px;
+  }
+  nav {
+    flex-direction: column;
+    text-align: center;
+  }
+  nav li {
+    padding: 0 6px;
+  }
+  .banner {
+    flex-direction: column-reverse;
+  }
+  .banner-content {
+    text-align: center;
+  }
+  .banner-title {
+    font-size: 1.75rem;
+  }
+  .banner-img {
+    background-image: none;
+  }
+  .banner-img img {
+    width: 100%;
+  }
+  .e-commerce-site {
+    padding: 20px 18px;
+    margin-top: 80px;
+  }
+  .e-commerce-site-img {
+    display: inline;
+    padding: 0;
+  }
+  .cards-container{
+    grid-template-columns: 1fr;
+  }
+  .cards > h2{
+    margin-bottom: 30px;
+  }
 }
 
 /* responsive for medium devices */
-@media screen and (min-width:576px) and (max-width:970px){
-    header {
-        padding: 0px 50px;
-    }
-    .banner-title {
-        font-size: 3rem;
-      }
-    .banner-img{
-        background-image: none;
-    }
-    .e-commerce-site {
-        padding: 50px;
-    }
+@media screen and (min-width: 576px) and (max-width: 970px) {
+  header,
+  .cards {
+    padding: 0px 50px;
+  }
+  .banner-title {
+    font-size: 3rem;
+  }
+  .banner-img {
+    background-image: none;
+  }
+  .e-commerce-site {
+    padding: 50px;
+  }
+  .cards > h2{
+    margin-bottom: 30px;
+  }
 }
