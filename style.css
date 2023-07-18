@@ -220,7 +220,7 @@ nav li a {
 }
 
 /* responsive for medium devices */
-@media screen and (min-width: 576px) and (max-width: 970px) {
+@media screen and (min-width: 576px) and (max-width: 960px) {
   header,
   .cards,
   .feature {
