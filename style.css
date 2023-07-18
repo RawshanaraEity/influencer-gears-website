@@ -83,7 +83,7 @@ nav li a {
 
 /* cards style */
 .cards {
-  padding: 100px 150px;
+  padding: 50px 150px;
 }
 
 .cards > h2 {
@@ -125,6 +125,28 @@ nav li a {
   font-weight: 700;
   text-align: right;
 }
+
+/* feature section styles */
+.feature {
+  padding: 50px 100px;
+  display: flex;
+  gap: 90px;
+}
+.feature-title {
+  color: #0a0826;
+  font-size: 2rem;
+  font-weight: 700;
+}
+.feature-info {
+  color: #6c6c6c;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.feature-content button {
+  border-radius: 0;
+}
+
 /* responsive for mobile */
 @media screen and (max-width: 576px) {
   .hide {
@@ -164,10 +186,10 @@ nav li a {
     display: inline;
     padding: 0;
   }
-  .cards-container{
+  .cards-container {
     grid-template-columns: 1fr;
   }
-  .cards > h2{
+  .cards > h2 {
     margin-bottom: 30px;
   }
 }
@@ -187,7 +209,7 @@ nav li a {
   .e-commerce-site {
     padding: 50px;
   }
-  .cards > h2{
+  .cards > h2 {
     margin-bottom: 30px;
   }
 }
